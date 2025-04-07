@@ -37,7 +37,7 @@ BEGIN
 		PRINT '>> Inserting Data Into: bronze.AutoInsurance_info';
 
         BULK INSERT bronze.AutoInsurance_info
-        FROM 'C:\Users\Omar\Desktop\Omar_Files\Python_Analysis\Auto_Insurance\Data_Sets\data_car.csv'
+        FROM 'C:\Users\Omar\Desktop\Omar_Files\SQL_Projects\InsuranceData_SQL_WareHouse_Project\SQL_DE_Project\Data_sets\data_car.csv'
         WITH (
 			  FIRSTROW=2,
 			  FIELDTERMINATOR = ',',
