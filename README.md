@@ -25,5 +25,6 @@
 ![Logo](C:/Users/Omar/Desktop/Omar_Files/SQL_Projects/InsuranceData_SQL_WareHouse_Project/SQL_DE_Project/docs/Project_Diagram.png)
 
 
+![Logo](C:/Users/Omar/Desktop/Omar_Files/SQL_Projects/InsuranceData_SQL_WareHouse_Project/SQL_DE_Project/docs/Project_Diagram.png)
 
 
