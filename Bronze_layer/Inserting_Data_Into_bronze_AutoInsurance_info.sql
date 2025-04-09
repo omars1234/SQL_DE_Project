@@ -48,3 +48,5 @@ BEGIN
 		PRINT '>> -------------';
 
 END
+
+EXEC bronze.load_bronze;

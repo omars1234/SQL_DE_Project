@@ -26,12 +26,14 @@ veh_value  FLOAT,
 exposure FLOAT,
 clm  INT,
 numclaims INT,
-claimcst0 FLOAT,
+Claims_Cost FLOAT,
 veh_body NVARCHAR(50),
 veh_age  NVARCHAR(50),
 gender  NVARCHAR(100),
 area  NVARCHAR(100),
 agecat NVARCHAR(50),
+severity FLOAT,
+Pure_Risk_premium FLOAT,
 dwh_create_date DATETIME2 DEFAULT GETDATE()
 );
 GO

@@ -27,11 +27,15 @@ SELECT
 		exposure,
 		clm,
 		numclaims,
-		clm as Claims_Cost,
+		Claims_Cost,
 		veh_body,
 		veh_age,
 		gender,
 		area,
-		agecat
+		agecat,
+		severity,
+		Pure_Risk_premium
 From silver.AutoInsurance_info;
 GO
+
+SELECT * FROM gold.AutoInsurance_info

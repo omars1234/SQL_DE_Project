@@ -8,18 +8,20 @@ INSERT INTO silver.AutoInsurance_info (
 		exposure,
 		clm,
 		numclaims,
-		claimcst0,
+		Claims_Cost,
 		veh_body,
 		veh_age,
 		gender,
 		area,
-		agecat
+		agecat,
+		severity,
+		Pure_Risk_premium
 	)
 
 SELECT  
 	veh_value *10000 AS veh_value,
 	exposure,
-	clm AS Claims,
+	clm,
 	numclaims,
 	claimcst0 AS Claims_Cost,
 	veh_body,
@@ -30,7 +32,12 @@ SELECT
 		ELSE 'N/A'
 	END AS Gender,
 	area,
-	agecat
+	agecat,
+	ISNULL(claimcst0/NULLIF(numclaims,0),0) AS severity,
+	 claimcst0/exposure AS Pure_Risk_premium
+
 FROM bronze.AutoInsurance_info
 WHERE veh_value >0;
   
+
+SELECT * FROM silver.AutoInsurance_info;
