@@ -1,5 +1,12 @@
+USE ProjectDataWarehouse;
+
+SELECT veh_value,claimcst0,exposure FROM silver.AutoInsurance_info;
+SELECT  MIN(veh_value) AS Min_Sum_Insured ,MAX(veh_value) AS Max_Sum_Insured,AVG(veh_value) AS Average_Sum_Insured FROM silver.AutoInsurance_info;
+SELECT  MIN(claimcst0) AS Min_claims,MAX(claimcst0) AS Max_claims,AVG(claimcst0)AS Average_Sum_claims FROM silver.AutoInsurance_info;
+SELECT  MIN(exposure)  AS Min_exposure,MAX(exposure) AS Max_exposure,AVG(exposure)AS Average_Sum_exposure FROM silver.AutoInsurance_info;
 
 
+-- Basic EDA By Category 
 SELECT 'total_records' AS MEASURE_NAME, COUNT(gender) AS MEASURE_VALUE FROM  silver.AutoInsurance_info
 UNION ALL
 SELECT 'total_distinct_records', COUNT(DISTINCT gender)  FROM  silver.AutoInsurance_info
