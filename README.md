@@ -16,7 +16,7 @@
 
 *B. Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.*
 
-*C. Gold Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.*
+*C. Gold Layer: Auto Insurance data Ready for reporting and analytics.*
 
 ----------
 
