@@ -2,7 +2,6 @@
 
 ## *Auto Insurance Data Engeneer and Analytics Project*
 
-## *👩‍💻 I'm currently working on...*
 
 ### *Welcome to the Auto Insurance Data Engeneer and Analytics Project repository! 🚀*
 
